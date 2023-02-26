@@ -247,7 +247,7 @@ def display():
         theme.grid(row=5, column=12, columnspan=2, ipadx=55, ipady=10)
 
         key.mainloop()
-  else:
+    else:
         # Add the lowercase keys
         # Adding keys line wise
         # First Row Buttons
