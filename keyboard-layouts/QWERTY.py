@@ -1,7 +1,7 @@
 #Code adapted from https://cppsecrets.com/users/5617971101051071011161151049711410997484852494964103109971051084699111109/On-Screen-Keyboard-using-Python.php
 
 import tkinter as tk
-from tikinter import ttk
+from tkinter import ttk
 
 key = tk.Tk()
 key.title('On Screen Keyboard - QWERTY')
