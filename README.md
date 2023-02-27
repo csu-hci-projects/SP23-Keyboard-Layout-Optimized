@@ -1,6 +1,6 @@
 # SP23-Keyboard-Layout-Optimized
 
-**Ryan 
+Ryan 
 
 2/26/2023
 
