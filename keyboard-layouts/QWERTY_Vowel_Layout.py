@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 
 key = tk.Tk()
-key.title('On Screen Keyboard - QWERTY')
+key.title('On Screen Keyboard - Vowel QWERTY')
 
 # key.resizable(True,True)
 # sizegrip = ttk.Sizegrip(key)
@@ -10,8 +10,12 @@ key.title('On Screen Keyboard - QWERTY')
 
 #ADJUST THESE TO MATCH SPECS OF SCREEN WE GET LOANED
 key.geometry('1385x320')  # Window size
-key.maxsize(width=1385, height=320) 
-key.minsize(width=1385, height=320)
+# key.maxsize(width=1385, height=320) 
+# key.minsize(width=1385, height=320)
+
+key.resizable(True,True)
+sizegrip = ttk.Sizegrip(key)
+sizegrip.grid(row=4, sticky= tk.SE)
 
 #Style
 style = ttk.Style()
@@ -24,12 +28,6 @@ style.map('TButton', background=[('active','red')])
 #my code
 style.configure('.', font=('Helvetica', 12, 'bold'), background='blue', foreground='white')
 style.configure('JS.TButton', font=('Helvetica', 12), background='blue', foreground='black')
-
-#Testing
-# def change_color():
-#     colors = ['#FF0000','#023020','#00008B','#A020F0']
-#     while True:
-        
 
 #Entry Box
 equation = tk.StringVar()
