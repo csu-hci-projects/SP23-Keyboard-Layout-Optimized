@@ -4,6 +4,10 @@ from tkinter import ttk
 key = tk.Tk()
 key.title('On Screen Keyboard - QWERTY')
 
+# key.resizable(True,True)
+# sizegrip = ttk.Sizegrip(key)
+# sizegrip.grid(row=4, sticky= tk.SE)
+
 #ADJUST THESE TO MATCH SPECS OF SCREEN WE GET LOANED
 key.geometry('1385x320')  # Window size
 key.maxsize(width=1385, height=320) 
@@ -17,6 +21,15 @@ style.configure('TButton', foreground='white')
 theme = "light"
 style.map('TButton', background=[('active','red')])
 
+#my code
+style.configure('.', font=('Helvetica', 12, 'bold'), background='blue', foreground='white')
+style.configure('JS.TButton', font=('Helvetica', 12), background='blue', foreground='black')
+
+#Testing
+# def change_color():
+#     colors = ['#FF0000','#023020','#00008B','#A020F0']
+#     while True:
+        
 
 #Entry Box
 equation = tk.StringVar()
@@ -101,7 +114,7 @@ def display():
         under = ttk.Button(key, text='_', width=6, command=lambda: press('_'))
         under.grid(row=1, column=11, ipadx=6, ipady=10)
 
-        plus = ttk.Button(key, text='+', width=6, command=lambda: press('+'))
+        plus = ttk.Button(key, text='+', width=6, command=lambda: press('+'), )
         plus.grid(row=1, column=12, ipadx=6, ipady=10)
 
         backspace = ttk.Button(
@@ -120,7 +133,7 @@ def display():
         W = ttk.Button(key, text='W', width=6, command=lambda: press('W'))
         W.grid(row=2, column=3, ipadx=6, ipady=10)
 
-        E = ttk.Button(key, text='E', width=6, command=lambda: press('E'), style = 'red')
+        E = ttk.Button(key, text='E', width=6, command=lambda: press('E'), style= 'JS.TButton')#, style = 'red'
         E.grid(row=2, column=4, ipadx=6, ipady=10)
 
         R = ttk.Button(key, text='R', width=6, command=lambda: press('R'))
@@ -132,13 +145,13 @@ def display():
         Y = ttk.Button(key, text='Y', width=6, command=lambda: press('Y'))
         Y.grid(row=2, column=7, ipadx=6, ipady=10)
 
-        U = ttk.Button(key, text='U', width=6, command=lambda: press('U'))
+        U = ttk.Button(key, text='U', width=6, command=lambda: press('U'), style= 'JS.TButton')
         U.grid(row=2, column=8, ipadx=6, ipady=10)
 
-        I = ttk.Button(key, text='I', width=6, command=lambda: press('I'))
+        I = ttk.Button(key, text='I', width=6, command=lambda: press('I'), style= 'JS.TButton')
         I.grid(row=2, column=9, ipadx=6, ipady=10)
 
-        O = ttk.Button(key, text='O', width=6, command=lambda: press('O'))
+        O = ttk.Button(key, text='O', width=6, command=lambda: press('O'), style= 'JS.TButton')
         O.grid(row=2, column=10, ipadx=6, ipady=10)
 
         P = ttk.Button(key, text='P', width=6, command=lambda: press('P'))
@@ -154,7 +167,7 @@ def display():
 
         # Third Row Buttons
 
-        A = ttk.Button(key, text='A', width=6, command=lambda: press('A'))
+        A = ttk.Button(key, text='A', width=6, command=lambda: press('A'), style= 'JS.TButton')
         A.grid(row=3, column=0, ipadx=6, ipady=10)
 
         S = ttk.Button(key, text='S', width=6, command=lambda: press('S'))
@@ -302,7 +315,7 @@ def display():
         W = ttk.Button(key, text='w', width=6, command=lambda: press('w'))
         W.grid(row=2, column=3, ipadx=6, ipady=10)
 
-        E = ttk.Button(key, text='e', width=6, command=lambda: press('e'))
+        E = ttk.Button(key, text='e', width=6, command=lambda: press('e'), style= 'JS.TButton')
         E.grid(row=2, column=4, ipadx=6, ipady=10)
 
         R = ttk.Button(key, text='r', width=6, command=lambda: press('r'))
@@ -314,13 +327,13 @@ def display():
         Y = ttk.Button(key, text='y', width=6, command=lambda: press('y'))
         Y.grid(row=2, column=7, ipadx=6, ipady=10)
 
-        U = ttk.Button(key, text='u', width=6, command=lambda: press('u'))
+        U = ttk.Button(key, text='u', width=6, command=lambda: press('u'), style= 'JS.TButton')
         U.grid(row=2, column=8, ipadx=6, ipady=10)
 
-        I = ttk.Button(key, text='i', width=6, command=lambda: press('i'))
+        I = ttk.Button(key, text='i', width=6, command=lambda: press('i'), style= 'JS.TButton')
         I.grid(row=2, column=9, ipadx=6, ipady=10)
 
-        O = ttk.Button(key, text='o', width=6, command=lambda: press('o'))
+        O = ttk.Button(key, text='o', width=6, command=lambda: press('o'), style= 'JS.TButton')
         O.grid(row=2, column=10, ipadx=6, ipady=10)
 
         P = ttk.Button(key, text='p', width=6, command=lambda: press('p'))
@@ -334,7 +347,7 @@ def display():
 
         # Third Row Buttons
 
-        A = ttk.Button(key, text='a', width=6, command=lambda: press('a'))
+        A = ttk.Button(key, text='a', width=6, command=lambda: press('a'), style= 'JS.TButton')
         A.grid(row=3, column=0, ipadx=6, ipady=10)
 
         S = ttk.Button(key, text='s', width=6, command=lambda: press('s'))
