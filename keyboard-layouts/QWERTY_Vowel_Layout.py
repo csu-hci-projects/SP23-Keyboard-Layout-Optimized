@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import *
 from tkinter import ttk
 
 key = tk.Tk()
@@ -9,7 +10,7 @@ key.title('On Screen Keyboard - Vowel QWERTY')
 # sizegrip.grid(row=4, sticky= tk.SE)
 
 #ADJUST THESE TO MATCH SPECS OF SCREEN WE GET LOANED
-key.geometry('1385x320')  # Window size
+key.geometry('1600x900')  # Window size
 # key.maxsize(width=1385, height=320) 
 # key.minsize(width=1385, height=320)
 
@@ -32,7 +33,7 @@ style.configure('JS.TButton', font=('Helvetica', 12), background='blue', foregro
 #Entry Box
 equation = tk.StringVar()
 Dis_entry = ttk.Entry(key, state='readonly', textvariable=equation)
-Dis_entry.grid(rowspan=1, columnspan=100, ipadx=999, ipady=20)
+Dis_entry.grid(rowspan=1, columnspan=100, ipadx=999, ipady=20, row = 0, column = 0)
 
 exp = " " #Store the text currently typed into the entry box
 is_shift = False #Is shift key being pressed?
@@ -66,12 +67,11 @@ def Clear():
     exp = " "
     equation.set(exp)
 
-
 def Theme():
     global theme
     if theme == "dark":
-        key.configure(bg='DarkSlateGrey')
-        style.configure('TButton', background='DarkSlateGray4')
+        key.configure(bg= theme)
+        style.configure('TButton', bg =theme, fg ="white")
         style.configure('TButton', foreground='white')
         theme = "light"
     elif theme == "light":
