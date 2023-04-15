@@ -20,15 +20,15 @@ sizegrip.grid(row=4, sticky= tk.SE)
 
 #Style
 style = ttk.Style()
-key.configure(bg='DarkSlateGrey')
-style.configure('TButton', background='DarkSlateGray4')
+key.configure(bg='gray27')
+style.configure('TButton', background='gray21')
 style.configure('TButton', foreground='white')
 theme = "light"
-style.map('TButton', background=[('active','red')])
+# style.map('TButton', background=[('active','red')])
 
-#my code
-style.configure('.', font=('Helvetica', 12, 'bold'), background='blue', foreground='white')
-style.configure('JS.TButton', font=('Helvetica', 12), background='blue', foreground='black')
+# my code
+# style.configure('.', font=('Helvetica', 12, 'bold'), background='blue', foreground='white')
+# style.configure('JS.TButton', font=('Helvetica', 12), background='blue', foreground='black')
 
 #Entry Box
 equation = tk.StringVar()
