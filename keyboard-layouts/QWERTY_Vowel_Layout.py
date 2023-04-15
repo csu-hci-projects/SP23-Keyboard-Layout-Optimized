@@ -3,7 +3,7 @@ from tkinter import *
 from tkinter import ttk
 
 key = tk.Tk()
-key.title('On Screen Keyboard - Vowel QWERTY')
+key.title('On Screen Keyboard - Colemak Layout - Vowel')
 
 # key.resizable(True,True)
 # sizegrip = ttk.Sizegrip(key)
