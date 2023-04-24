@@ -4,7 +4,7 @@ import tkinter as tk
 from tkinter import ttk
 
 key = tk.Tk()
-key.title('On Screen Keyboard - QWERTY')
+key.title('On Screen Keyboard - Colemak')
 
 #ADJUST THESE TO MATCH SPECS OF SCREEN WE GET LOANED
 key.geometry('1385x320')  # Window size
