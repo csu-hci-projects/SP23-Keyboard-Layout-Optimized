@@ -15,3 +15,15 @@ Jaime M.
 3/22/2023
 
 I spent this week looking at different keyboard layouts that could be more optimal than the QWERTY layout. I ended up choosing the Dvorak layout as there are many resources online for it. After completing the Dvorak layout I began to test it to find any issues so that they do not interfere with the experimentation.
+
+
+
+
+This README file contains links to videos, the github, etc.
+
+Github Link: https://github.com/csu-hci-projects/SP23-Keyboard-Layout-Optimized
+
+Video Links: 
+    OverView: https://youtu.be/6fnr2Cwj4Xs
+    Code and Experiment Explanation: https://youtu.be/HEyDr8PFF7I
+    
